@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>社会主义核心价值观</title>
+</head>
+<style >
+body{
+	margin: 0;
+ 	padding: 0;
+ 	width:100%;
+ 	background-color: #f2f207;
+ }
+ .plate{
+ 	height: 100%;
+ 	width: 20%;
+ 	background-color: #ffe087;
+ 	position: absolute;
+    left: 0;
+    border-right:2px solid grey;
+ }
+ .plate a{
+	font-size:2em;
+}
+.build{	width:450px;
+	height:350px;
+	position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+}
+</style>
+<body>
+	<div class="build">
+		<p style="font-size: 3em">关于诚信经营的视频</p>
+		<video width="800" autoplay="autoplay" controls="controls">
+		<source src="video/视频.mp4" type="">
+	</video></div>
+	<div class="plate"><center><strong style="font-size: 4em;">板块</strong><button type="submit" onclick="skip()" style="border-radius: 10px 10px 10px 10px;">返回主页</button></center>
+		<p><strong><a href="shuxue.html">数学</strong></p>
+		<p><strong><a href="kexue.html">科学</strong></p>
+		<p><strong><a href="secai.html">色彩</strong></p>
+		<p><strong><a href=" ">社会主义核心价值观</strong></p>
+		<p><strong><a href="yinyue1.html">音乐</strong></p>
+		<p><strong><a href="denglu.html">返回登录界面</strong></p>
+		</div>
+</body>
+</html>
+<script>
+function skip()
+{
+    window.location.href="zhuye.html";
+}
+</script>

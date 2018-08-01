@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>yinyue1</title>
+</head>
+<style >
+body{
+	margin: 0;
+ 	padding: 0;
+ 	width:100%;
+ 	background-color: #f2f207;
+ }
+ .plate{
+ 	height: 100%;
+ 	width: 20%;
+ 	background-color: #ffe087;
+ 	position: absolute;
+    left: 0;
+    border-right:2px solid grey;
+ }
+ .plate a{
+	font-size:2em;
+}
+.music{	width:450px;
+	height:350px;
+	position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+}
+</style>
+<body>
+	<div class="music">
+		<p style="font-size: 2em">点击播放按钮播放音乐</p>
+		<p>
+				<select id="pid" >
+					<option value="1">Red fraction</option>
+					<option value="2">Tank!</option>
+				</select>
+				<input type='button' value='进入该音乐' onClick="fun()"/></p>
+				<img src="img/music1.jpg" style="width: 450px;">
+				<audio controls="controls">
+					<source src="video/Red fraction.mp3">
+					</video>
+				</div>
+				<div class="plate"><center><strong style="font-size: 4em;">板块</strong><button type="submit" onclick="skip()" style="border-radius: 10px 10px 10px 10px;">返回主页</button></center>
+					<p><strong><a href="shuxue.html">数学</strong></p>
+					<p><strong><a href="kexue.html">科学</strong></p>
+					<p><strong><a href="secai.html">色彩</strong></p>
+					<p><strong><a href="jiazhi.html">社会主义核心价值观</strong></p>
+					<p><strong><a href=" ">音乐</strong></p>
+					<p><strong><a href="denglu.html">返回登录界面</strong></p>
+					</div>
+</body>
+</html>
+<script type="text/javascript">
+	function fun(){
+		var objS = document.getElementById("pid");
+		var g = objS.value
+		if (g=="2") {window.location.href="yinyue2.html"}
+	}
+function skip()
+{
+    window.location.href="zhuye.html";
+}
+</script>

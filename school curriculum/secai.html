@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>社会主义核心价值观</title>
+</head>
+<style >
+body{
+	margin: 0;
+ 	padding: 0;
+ 	width:100%;
+ 	background-color: #f2f207;
+ }
+ .plate{
+ 	height: 100%;
+ 	width: 20%;
+ 	background-color: #ffe087;
+ 	position: absolute;
+    left: 0;
+    border-right:2px solid grey;
+ }
+ .plate a{
+	font-size:2em;
+}
+.shift{	width:800px;
+	height:350px;
+	position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+}
+.shift button{
+ 	background-color:#d9d9d9;
+ 	cursor:pointer;
+}
+.shift button:hover{
+ 	background-color:#cccccc;
+ }
+</style>
+<body style="overflow:hidden;">
+	<div class="shift">
+		<p style="font-size: 3em" id="disappear">通过色盘来改变背景颜色</p>
+		<input style="position:absolute;left:3000px;" type="color" id="color" />
+		<button style="width:500px;height: 50px;font-size: 2em" id="btn">弹出色盘</button>
+		<p><button onclick="disappear()">点击使“颜色”消失</button></p>
+	</div>
+	<div class="plate"><center><strong style="font-size: 4em;">板块</strong><button type="submit" onclick="skip()" style="border-radius: 10px 10px 10px 10px;">返回主页</button></center>
+		<p><strong><a href="shuxue.html">数学</strong></p>
+		<p><strong><a href="kexue.html">科学</strong></p>
+		<p><strong><a href=" ">色彩</strong></p>
+		<p><strong><a href="jiazhi.html">社会主义核心价值观</strong></p>
+		<p><strong><a href="yinyue1.html">音乐</strong></p>
+		<p><strong><a href="denglu.html">返回登录界面</strong></p>
+		</div>
+</body>
+</html>
+<script type="text/javascript">
+	function disappear(){document.getElementById("disappear").innerHTML="通过色盘来改变背景";}
+
+document.getElementById('btn').onclick = function(){
+	document.getElementById('color').click();
+};
+document.getElementById('color').onchange = function(){
+	document.body.style.background = this.value;
+};
+function skip()
+{
+    window.location.href="zhuye.html";
+}
+</script>
+

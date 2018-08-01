@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>科学</title>
+</head>
+<style >
+body{
+	margin: 0;
+ 	padding: 0;
+ 	width:100%;
+ 	background-color: #f2f207;
+ }
+ .plate{
+ 	height: 100%;
+ 	width: 20%;
+ 	background-color: #ffe087;
+ 	position: absolute;
+    left: 0;
+    border-right:2px solid grey;
+ }
+ .plate a{
+	font-size:2em;
+}
+.science{	width:400px;
+	height:350px;
+	position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+}
+.science input{
+ 	background-color:#d9d9d9;
+ 	cursor:pointer;
+}
+.science input:hover{
+ 	background-color:#cccccc;
+}
+</style>
+<body>
+	<div class="science"><p style="font-size:5em">时空旅行</p>
+		<p style="font-size: 3em">选择你想去的时间</p>
+		<input type="date" >
+		<input type="time">
+		<p>输入地点（如果输入的是英文，并且有输入错误会有红色下划线提醒）</p>
+		<p><input type="text" name="where" spellcheck="true"></p>
+		<input type="button"  onclick="disp_alert() "  value="前往" style="font-size: 3em">
+	</div>
+	<div class="plate"><center><strong style="font-size: 4em;">板块</strong><button type="submit" onclick="skip()" style="border-radius: 10px 10px 10px 10px;">返回主页</button></center>
+		<p><strong><a href="shuxue.html">数学</strong></p>
+		<p><strong><a href=" ">科学</strong></p>
+		<p><strong><a href="secai.html">色彩</strong></p>
+		<p><strong><a href="jiazhi.html">社会主义核心价值观</strong></p>
+		<p><strong><a href="yinyue1.html">音乐</strong></p>
+		<p><strong><a href="denglu.html">返回登录界面</strong></p>
+		</div>
+</body>
+</html>
+		<script type="text/javascript">
+			function disp_alert( ) { window.alert("你无法穿越时空，珍惜现在吧") }
+			function skip()
+{
+    window.location.href="zhuye.html";
+}
+		</script>
