@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//dn-staticfile.qbox.me/font-awesome/4.2.0/fonts/">
+	<link rel="stylesheet" href="torch.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+</style>
+</head>
+<body>
+	<div>
+		<a href="home.html"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543142233743&di=9ffbc510a2a51d98c24f63b53f31ed21&imgtype=0&src=http%3A%2F%2Fgss0.baidu.com%2F-4o3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F962bd40735fae6cd57f72a480cb30f2442a70f53.jpg" class="media-object"style="width:150px;height:50px">
+		</a>
+		<nav id="top-navbar" class="navbar navbar-default navbar-fixed-top navbar-top-alter"
+		style="position: fixed;top: 0;left: 150px">
+			<form class="navbar-form navbar-right ">
+				<div class="form-group">
+					<input type="text" class="form-control " name="" placeholder="搜索">
+				</div>
+				<button type="submit" class="btn btn-default  has-feedback"><span class="glyphicon glyphicon-search btn-control-feedback" aria-hidden="true"></span></button>
+			</form>
+			<ul class="nav navbar-nav dropdown navbar-right" id="mytab">
+				<li class="dropdown">
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">消息<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="">站内私信</a></li>
+						<li><a href="">系统消息</a></li>
+					</ul>
+				</li>
+				<li><a href="">帮助</a></li>
+			</ul>
+		</nav>
+		<div class="container content" style="padding-left: 0px;background-color: #eaeaea" >
+			<div class="container-fluid">
+				<div class="row usercenter">
+					<div class="usercenterinfo-nav col-md-2">
+						<div class="list-wrap">
+							<div class="navlist">
+	                    		<a class="mainwrap" href="home.html">
+	                    			<div class="main">
+										<span >
+											<span class="glyphicon glyphicon-home">
+											 返回首页
+											</span>
+										</span>
+									</div>
+	                    		</a>
+	                    		<a class="mainwrap" href="">
+	                    			<div class="main">
+										<span >
+											<span class="glyphicon glyphicon-user">
+											 我的好友
+											</span>
+										</span>
+									</div>
+	                    		</a>
+	                    		<a class="mainwrap" data-toggle="collapse" href="#collapseFavorite" >
+	                    			<div class="main">
+										<span>
+											<span class="glyphicon glyphicon-star"> 我的收藏</span>
+											<span class="glyphicon glyphicon-menu-down right" "></span>
+										</span>
+									</div>
+	                    		</a>
+	                    		<div class=" collapse in" id="collapseFavorite" aria-expanded="true" style="">
+	                        		<ul class="nav">
+			                            <li>
+			                                <a href="#Favoriteplates">
+			                                	<span>
+				                                	<span class="glyphicon glyphicon-menu-right"></span>
+				                                    <span class="">板块收藏</span>
+				                                </span>
+			                                </a>
+			                            </li>
+			                            <li>
+			                                <a href="#Favoritebunches">
+			                                	<span class="glyphicon glyphicon-menu-right"></span>
+			                                    <span class="">帖子收藏</span>
+			                                </a>
+			                            </li>
+			                            <li>
+			                                <a href="#Favoritefloors">
+			                                	<span class="glyphicon glyphicon-menu-right"></span>
+			                                    <span class="">楼层收藏</span>
+			                                </a>
+			                            </li>
+			                        </ul>
+			                    </div>
+			                    <a class="mainwrap" data-toggle="collapse" href="#collapseHistory" >
+			                    	<div class="main">
+										<span>
+											<span class="glyphicon glyphicon-time"> 发言记录</span>
+											<span class="glyphicon glyphicon-menu-down right" ">
+										</span>
+									</div>
+	                    		</a>
+	                    		<div class=" collapse in" id="collapseHistory" aria-expanded="true" style="">
+	                        		<ul class="nav">
+			                            <li>
+			                                <a href="#bunchHistory">
+			                                	<span class="glyphicon glyphicon-menu-right"></span>
+			                                    <span class="">主题记录</span>
+			                                </a>
+			                            </li>
+			                            <li>
+			                                <a href="#floorHistory">
+			                                	<span class="glyphicon glyphicon-menu-right"></span>
+			                                    <span class="">回复记录</span>
+			                                </a>
+			                            </li>
+			                        </ul>
+			                    </div>
+			                    <a class="mainwrap" data-toggle="collapse" href="#collapseMessages" >
+			                    	<div class="main">
+										<span>
+											<span class="glyphicon glyphicon-bullhorn"> 我的消息</span>
+											<span class="glyphicon glyphicon-menu-down right" ">
+										</span>
+									</div>
+	                    		</a>
+	                    		<div class=" collapse in" id="collapseMessages" aria-expanded="true" style="">
+	                        		<ul class="nav">
+			                            <li>
+			                                <a href="#bunchHistory">
+			                                	<span class="glyphicon glyphicon-menu-right"></span>
+			                                    <span class="">站内私信</span>
+			                                </a>
+			                            </li>
+			                            <li>
+			                                <a href="#floorHistory">
+			                                	<span class="glyphicon glyphicon-menu-right"></span>
+			                                    <span class="">系统消息</span>
+			                                </a>
+			                            </li>
+			                        </ul>
+			                    </div>
+			                    <a class="mainwrap" data-toggle="collapse" href="#collapseEdit" >
+			                    	<div class="main">
+										<span>
+											<span class="glyphicon glyphicon-wrench"> 账号管理</span>
+											<span class="glyphicon glyphicon-menu-down right" ">
+										</span>
+									</div>
+	                    		</a>
+	                    		<div class=" collapse in" id="collapseEdit" aria-expanded="true" style="">
+	                        		<ul class="nav">
+			                            <li class="">
+			                                <a href="#bunchHistory">
+			                                	<span class="glyphicon glyphicon-menu-right"></span>
+			                                    <span class="">修改信息</span>
+			                                </a>
+			                            </li>
+			                            <li>
+			                                <a href="#floorHistory">
+			                                	<span class="glyphicon glyphicon-menu-right"></span>
+			                                    <span class="">重设密码</span>
+			                                </a>
+			                            </li>
+			                        </ul>
+			                    </div>
+			                    <a class="mainwrap" data-toggle="collapse" href="" >
+			                    	<div class="main">
+										<span>
+											<span class="glyphicon glyphicon-off"> 登出</span>
+										</span>
+									</div>
+	                    		</a>
+			                </div>
+		                </div>
+					</div>
+					<div class="col-md-8 usercenter-info">
+						<div class="usercenter-info-wrap">
+							<div class="row userinfo-block">
+								<div class="col-md-3">
+									<div class="img"></div>
+								</div>
+								<div class="col-md-9">
+									<div class="username">
+										<span >用户名</span>
+									</div>
+									<div class="words">
+										个人说明
+									</div>
+								</div>
+							</div>
+							<div class="row user-level">
+								<div class="col-md-5">
+									<div>用户等级:</div>
+								</div>
+								<div class="col-md-5">
+									<div>板块等级:</div>
+								</div>
+							</div>
+							<div class="row user-exp">
+								<div class="col-md-5">
+									<div>总经验:</div>
+								</div>
+								<div class="col-md-5">
+									<div>板块经验:</div>
+								</div>
+							</div>
+							<div class="row user-issue">
+								<div class="col-md-5">
+									<div>主题数:</div>
+								</div>
+								<div class="col-md-5">
+									<div>回复数:</div>
+								</div>
+							</div>
+							<div class="row user-sbd">
+								<div class="col-md-5">
+									<div>性别:</div>
+								</div>
+								<div class="col-md-5">
+									<div>生日:</div>
+								</div>
+							</div>
+							<div class="row user-dayemail">
+								<div class="col-md-5">
+									<div>电子邮箱:</div>
+								</div>
+								<div class="col-md-5">
+									<div>注册日期:</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	$("#mytab a").click(function(e) {
+		e.preventDefault();
+		$(this).tab("show");
+	})
+</script>
+</body>
+</html>
